@@ -1,0 +1,3 @@
+API_KEY = 'AIzaSyDMImUHCUak1jV0qXcTKF6HkZHJQPHfdUw'
+ENGINE_ID = '015537066234854914429:x9wdfuykuyg'
+JSON_OUTPUT_PATH = 'search_results.json'

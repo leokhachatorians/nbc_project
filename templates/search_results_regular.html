@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+	<h1> Search Results </h1>
+	{% for result in results %}
+		<div class="row">
+			<h2>Loaded {{ result.url }} in {{ result.elapsed }} seconds.</h2>
+		</div>
+		<div class="row">
+			<h3><b>Title</b>: {{ result.title }}</h3>
+		</div>
+		<div class="row">
+			<h3><b>Description</b>: {{ result.snippet }}</h3>
+		</div>
+		<div class="row">
+			<p style="word-wrap: break-word;"><b>Headers</b>: {{ result.header }}</p>
+		</div>
+		<div class="row">
+			<p style="word-wrap: break-word;"><b>Cookies</b>: {{ result.cookie }}</p>
+		</div>
+	{% endfor %}
+{% endblock %}
