@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {% block body %}
-	<h1> Search Results </h1>
+	<h1 class="line search_title">Search Results</h1>
 	{% for result in results %}
 		<div class="row">
-			<h2>Loaded {{ result.url }} in {{ result.elapsed }} seconds.</h2>
+			<h3><b>Url</b>: {{ result.url }}</h3>
+		</div>
+		<div class="row">
+			<h3><b>Loading Time</b>: {{ result.elapsed }} seconds.</h3>
 		</div>
 		<div class="row">
 			<h3><b>Title</b>: {{ result.title }}</h3>
@@ -17,5 +20,6 @@
 		<div class="row">
 			<p style="word-wrap: break-word;"><b>Cookies</b>: {{ result.cookie }}</p>
 		</div>
+		<div class="line"></div>
 	{% endfor %}
 {% endblock %}
