@@ -1,8 +1,6 @@
 from flask import Flask, render_template, jsonify, url_for
-from multiprocessing import Process
 import config
 import json
-import webbrowser
 
 app = Flask(__name__)
 
